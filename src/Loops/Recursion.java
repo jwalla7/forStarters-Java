@@ -10,8 +10,15 @@ import java.util.Scanner;
 public class Recursion {
 
     public static void main(String[] args) {
-//       1 - Recursion Factorial Calculator: accepts input of a positive integer and returns the integer's factorial.
-//        2 - Scanner
+//      1 - Introduction:
+//        1.1 - Recursion Factorial Calculator: Accepts input of a positive integer and returns the integer's factorial.
+//          1.2 - Greatest Common Divisor Calculator: Accepts input of a larger and smaller integer and returns the greatest common divisor.
+//            1.3 - Reverse Words Generator: Accepts input of a string and returns the string backwards.
+
+//  Which Calculator or Generator to use?
+
+//      2 - Scanner: accepts input from user. (More in-depth in Scanner Package)
+//          2.1 - Message Prompt at the start of Recursion.main()
         System.out.println(
                          """
                          |----------------------| |----------------------| |----------------------|
@@ -23,49 +30,50 @@ public class Recursion {
                          Type in WORDS to reverse a word!
                          """
                           );
-
+//          2.2 - (Define) accepted user inputs
         String factorial = "FACT";
         String greatestCommonDivisor = "GCD";
         String reverseWords = "WORDS";
-
+//          2.3 - (Implementation) of Scanner to receive user input.
         Scanner console = new Scanner(System.in);
-        String response = console.nextLine();
-
+        double calculate;
+        String response;
+//          2.4 - (What if?) user input matches or doesn't match accepted user inputs 2.2
         do {
-            try {
-//                response = console.nextLine();
+            response = console.nextLine();
 
-                if (response == response) {
-                    break;
-                }
-            } catch (Exception e) {
+            if (response.equals(factorial) || response.equals(greatestCommonDivisor) || response.equals(reverseWords)) {
+                break;
+//          2.4.2 - (What if?) user inputs doesn't match accepted user inputs 2.2: run error message
+            } else {
                 System.out.println(
                                  """
                                  INVALID
                                  Enter "FACT" to calculate factorials!
                                  Enter "GCD" to calculate greatest common divisors!
-                                 Enter "WORDS" to reverse a word!
+                                 Enter "WORDS" to reverse a word!EXCEPTION
                                  """
                                   );
-            } finally {
-            }
+                }
+//         2.4.3 - Keep repeating 2.4.2 error message if 2.4.2 persists.
         } while (true);
-//      3 Methods: The following Factorial, Greatest Common Divisor, and Reverse Words methods will implement recursion
-//       4 Factorials
+
+
+//       4 - Factorials
+//          4.1 - (What if?) user inputs match accepted user inputs 2.2
         if (response.equals(factorial)) {
-            double calculate;
+            System.out.println(
+                    """
+                    Lets find some factorials!
+                    Enter an integer greater or equal to 0.
+                    """
+            );
 
             do {
                 try {
-                    System.out.println(
-                                     """
-                                     Lets find some factorials!
-                                     Enter an integer greater or equal to 0.
-                                     """
-                                      );
                     calculate = console.nextDouble();
 
-                    if (calculate == calculate) {
+                    if (calculate >= 0) {
                         break;
                     }
                 } catch (InputMismatchException eMismatch) {
@@ -112,25 +120,25 @@ public class Recursion {
                               );
             response = console.nextLine();
         } else {
-            while (!response.equals(factorial) || !response.equals(greatestCommonDivisor) || !response.equals(reverseWords)) {
+            do {
                 System.out.println(
                                  """
                                  INVALID
                                  Enter "FACT" to calculate factorials!
                                  Enter "GCD" to calculate greatest common divisors!
-                                 Enter "WORDS" to reverse a word!
+                                 Enter "WORDS" to reverse a word!REVERSE
                                  """
                                   );
                 response = console.nextLine();
-            }
+            } while (!response.equals(factorial) || !response.equals(greatestCommonDivisor) || !response.equals(reverseWords));
         }
     }
 
 //    Factorial Input
-    public static void inputFactorial(Scanner console) {
+    public static void inputFactorial() {
 
     }
-//    Factorial Method
+//    Factorial Calculate Method
     public static double recursiveFactorial(double input) {
 //        Function: Use recursion to find factorial of input.
         if (input > 0) {
