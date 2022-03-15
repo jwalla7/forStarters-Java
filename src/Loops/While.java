@@ -24,15 +24,15 @@ public class While {
 //      2 - Scanner: accepts input from user.
 //          2.1 - Message Prompt at the start of executing Recursion.main()
         System.out.println(
-                """
-                |----------------------| |----------------------|
-                |  Palindrome Integer  | |  Palindrome String   |
-                |       Generator      | |       Generator      |
-                |----------------------| |----------------------|
-                Type in INT to check if an integer is a palindrome!
-                Type in STR to check if a phrase is a palindrome!
-                """
-        );
+                         """
+                         |----------------------| |----------------------|
+                         |  Palindrome Integer  | |  Palindrome String   |
+                         |       Generator      | |       Generator      |
+                         |----------------------| |----------------------|
+                         Type in INT to check if an integer is a palindrome!
+                         Type in STR to check if a phrase is a palindrome!
+                         """
+                         );
 //          2.1 - (Define) accepted user inputs
         String integer = "INT";
         String phrase = "STR";
@@ -58,11 +58,11 @@ public class While {
 
         if (response.equals(integer)) {
             System.out.println(
-                    """
-                    Is your integer a Palindrome?
-                    Enter an integer.
-                    """
-            );
+                             """
+                             Is your integer a Palindrome?
+                             Enter an integer.
+                             """
+                              );
             do {
                 try {
                     number = console.nextInt();
@@ -93,15 +93,17 @@ public class While {
                     response = console.nextLine();
                 }
             } while (true);
-            System.out.println("Checking if " + number + " is a palindrome...");
+            System.out.println(
+                             "Checking if " + number + " is a palindrome..."
+                              );
             if (palindromeInt(number)) {
                 System.out.println(
                                  "Yes, " + number + " is a palindrome!"
                                   );
             } else {
                 System.out.println(
-                        "Sorry, " + number + " is not a palindrome!"
-                );
+                                 "Sorry, " + number + " is not a palindrome!"
+                                  );
             }
         }
     }
