@@ -11,7 +11,7 @@ public class While {
 //      1 - Introduction: This exercise utilizes algorithms that utilize the while method.
 //       1.1 - Palindrome Integer: Accepts input of a positive integer and validates if input is a Palindrome.
 //        1.2 - Palindrome String: Accepts input a string and validates if input is a Palindrome.
-/*         1.3 - What is a Palindrome? A word, phrase, or sequence that reads the same backward as forward.
+/*         1.3 - What is a Palindrome? A word, phrase, or sequence that reads the same backwards as forwards.
 *                For example, 121 is a palindrome while 123 is not.
 *                   121 -> forwards equals 121
 *                   121 <- backwards equals 121
@@ -22,7 +22,7 @@ public class While {
 //        Which method, Palindrome Integer or Palindrome String?
 
 //      2 - Scanner: accepts input from user.
-//          2.1 - Message Prompt at the start of executing Recursion.main()
+//          2.1 - Message Prompt at the start of executing While.main()
         System.out.println(
                          """
                          |----------------------| |----------------------|
