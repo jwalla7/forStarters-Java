@@ -158,9 +158,7 @@ public class Recursion {
             } while (true);
 
             System.out.println(
-                             """
-                             Now, enter a positive integer larger than the previous integer entered.
-                             """
+                            "Great! Now enter a positive integer larger than " + smallerNum + "."
                               );
             do {
                 try {
