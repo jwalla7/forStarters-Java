@@ -10,14 +10,14 @@ import java.util.Scanner;
 public class Recursion {
 
     public static void main(String[] args) {
-//      1 - Introduction:
-//        1.1 - Recursion Factorial Calculator: Accepts input of a positive integer and returns the integer's factorial.
+//      1 - Introduction: This exercise utilizes various algorithms that utilize recursion.
+//        1.1 - Recursion Factorial Calculator: Accepts input of a positive number and returns the number's factorial.
 //          1.2 - Greatest Common Divisor Calculator: Accepts input of a larger and smaller integer and returns the greatest common divisor.
 //            1.3 - Reverse Words Generator: Accepts input of a string and returns the string backwards.
 
-//  Which Calculator or Generator to use?
+//  Which Calculator or Generator?
 
-//      2 - Scanner: accepts input from user. (More in-depth in Scanner Package)
+//      2 - Scanner: accepts input from user.
 //          2.1 - Message Prompt at the start of executing Recursion.main()
         System.out.println(
                          """
@@ -38,13 +38,15 @@ public class Recursion {
         Scanner console = new Scanner(System.in);
         double calculate;
         String response;
+        int largerNum;
+        int smallerNum;
 //          2.4 - (What if?) user input matches or doesn't match accepted user inputs 2.2
         do {
             response = console.nextLine();
-//         2.4.1 - (What if?) user input matches accepted user inputs 2.2
+//          2.5 - (What if?) user input matches accepted user inputs 2.2
             if (response.equals(factorial) || response.equals(greatestCommonDivisor) || response.equals(reverseWords)) {
                 break;
-//          2.4.2 - (What if?) user inputs doesn't match accepted user inputs 2.2: run error message
+//          2.6 - (What if?) user inputs doesn't match accepted user inputs 2.2: run error message
             } else {
                 System.out.println(
                                  """
@@ -55,18 +57,18 @@ public class Recursion {
                                  """
                                   );
                 }
-//         2.4.3 - Keep repeating 2.4.2 error message if 2.4.2 persists.
+//         2.7 - Keep repeating 2.4.2 error message if 2.4.2 persists.
         } while (true);
 
 
-//       3 - Factorials
-//          3.1 - (What if?) user inputs matches accepted user inputs 2.2
+//      3 - Factorials  n! = n x (n-1) x...x1
+//         3.1 - (What if?) user inputs match accepted user inputs 2.2
         if (response.equals(factorial)) {
-//          3.2 - (What if?) user inputs matches accepted user inputs 2.2
+//         3.2 - (What if?) user inputs match accepted user inputs 2.2
             System.out.println(
                     """
                     Lets find some factorials!
-                    Enter an integer greater or equal to 0.
+                    Enter an number greater or equal to 0.
                     """
             );
             do {
@@ -76,6 +78,14 @@ public class Recursion {
 //          3.4 - (Continue) user inputs meet requirements
                     if (calculate >= 0) {
                         break;
+                    } else {
+//           3.4.1 - (What if) user input is smaller than requirements
+                        System.out.println(
+                                         """
+                                         INVALID
+                                         Enter a number greater or equal to 0.
+                                         """
+                                          );
                     }
 //          3.5 - (What if) user inputs are different data types such as a string?
                 } catch (InputMismatchException eMismatch) {
@@ -89,7 +99,7 @@ public class Recursion {
                     response = console.nextLine();
                 }
             } while (true);
-//         3.6 - Keep repeating error message if user input does not meet prompt requirements greater or equal to 0
+//          3.6 - Keep repeating error message if user input does not meet prompt requirements greater or equal to 0
             while (calculate < 0) {
                 System.out.println(
                                  """
@@ -104,15 +114,109 @@ public class Recursion {
                 System.out.println("Calculating factorial...");
                 System.out.println(recursiveFactorial(calculate));
             }
-//      5. Greatest Common Divisor
+
+//      4 - Greatest Common Divisor
         } else if (response.equals(greatestCommonDivisor)) {
             System.out.println(
                                 """
                                 Lets find the greatest common divisor!
-                                Let's start by entering the larger number.
+                                First you'll need two integers, one larger than the other.
+                                Let's start by entering the smaller positive integer.
                                 """
                               );
-//      6. Reverse Words
+            do {
+                try {
+                    smallerNum = console.nextInt();
+
+                    if (smallerNum > 0) {
+                        break;
+                    } else {
+                        System.out.println(
+                                         """
+                                         INVALID
+                                         Enter a positive integer greater than 0. HA
+                                         """
+                                          );
+                    }
+                } catch (InputMismatchException eMismatch) {
+                    System.out.println(
+                            """
+                            INVALID
+                            Enter a positive integer greater than 0. LOL
+                            """
+                    );
+                } catch (ArithmeticException arithEx){
+                    System.out.println(
+                                     """
+                                     INVALID
+                                     Enter a larger positive integer. NAH
+                                     """
+                                      );
+                } finally {
+                    response = console.nextLine();
+                }
+            } while (true);
+
+            System.out.println(
+                             """
+                             Now, enter a positive integer larger than the previous integer entered.
+                             """
+                              );
+            do {
+                try {
+                    largerNum = console.nextInt();
+
+                    if (largerNum > smallerNum && largerNum % smallerNum > 0) {
+                        break;
+                    } else {
+                        System.out.println(
+                                         "INVALID" + '\n' +
+                                         "Enter a positive integer larger than " + smallerNum + " OKAYS."
+                                          );
+                    }
+                } catch (InputMismatchException eMismatch) {
+                    System.out.println(
+                                     "INVALID" + '\n' +
+                                     "Enter a positive integer larger than " + smallerNum + " LOL."
+                                      );
+                } catch (ArithmeticException arEx){
+                    System.out.println(
+                                    "INVALID" + '\n' +
+                                    "Enter a positive integer larger than " + smallerNum + " NAH."
+                                      );
+                } finally {
+                    response = console.nextLine();
+                }
+            } while (true);
+
+            do {
+                try {
+                    if (largerNum % smallerNum > 0) {
+                        break;
+                    } else {
+                        System.out.println(
+                                        "INVALID" + '\n'
+                                        + "Enter a positive integer larger than " + smallerNum + " NOW."
+                        );
+                    }
+                } catch (InputMismatchException eMismatch){
+                    System.out.println("eMismatch");
+                } catch (ArithmeticException arEx){
+                    System.out.println("arithEX");
+                } catch (Exception e){
+                    System.out.println("eEX");
+                } finally {
+                    System.out.println(
+                                    "Calculating the greatest common divisor of " + largerNum + " and " + smallerNum + "..."
+                                      );
+                }
+            } while (largerNum % smallerNum < 0);
+
+            if (largerNum % smallerNum > 0) {
+                System.out.println(gcd(largerNum, smallerNum));
+            }
+
+//      6 - Reverse Words
         } else if (response.equals(reverseWords)) {
             System.out.println(
                                 """
