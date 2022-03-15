@@ -18,7 +18,7 @@ public class Recursion {
 //  Which Calculator or Generator to use?
 
 //      2 - Scanner: accepts input from user. (More in-depth in Scanner Package)
-//          2.1 - Message Prompt at the start of Recursion.main()
+//          2.1 - Message Prompt at the start of executing Recursion.main()
         System.out.println(
                          """
                          |----------------------| |----------------------| |----------------------|
@@ -41,7 +41,7 @@ public class Recursion {
 //          2.4 - (What if?) user input matches or doesn't match accepted user inputs 2.2
         do {
             response = console.nextLine();
-
+//         2.4.1 - (What if?) user input matches accepted user inputs 2.2
             if (response.equals(factorial) || response.equals(greatestCommonDivisor) || response.equals(reverseWords)) {
                 break;
 //          2.4.2 - (What if?) user inputs doesn't match accepted user inputs 2.2: run error message
@@ -59,23 +59,25 @@ public class Recursion {
         } while (true);
 
 
-//       4 - Factorials
-//          4.1 - (What if?) user inputs match accepted user inputs 2.2
+//       3 - Factorials
+//          3.1 - (What if?) user inputs matches accepted user inputs 2.2
         if (response.equals(factorial)) {
+//          3.2 - (What if?) user inputs matches accepted user inputs 2.2
             System.out.println(
                     """
                     Lets find some factorials!
                     Enter an integer greater or equal to 0.
                     """
             );
-
             do {
+//          3.3 - (What if?) do user inputs meet the requirements of new prompt
                 try {
                     calculate = console.nextDouble();
-
+//          3.4 - (Continue) user inputs meet requirements
                     if (calculate >= 0) {
                         break;
                     }
+//          3.5 - (What if) user inputs are different data types such as a string?
                 } catch (InputMismatchException eMismatch) {
                     System.out.println(
                                      """
@@ -87,7 +89,7 @@ public class Recursion {
                     response = console.nextLine();
                 }
             } while (true);
-
+//         3.6 - Keep repeating error message if user input does not meet prompt requirements greater or equal to 0
             while (calculate < 0) {
                 System.out.println(
                                  """
@@ -97,7 +99,7 @@ public class Recursion {
                                   );
                 calculate = console.nextDouble();
             }
-
+//          3.7 (Implementation) Continue by passing user input into recursiveFactorial method to calculate user input
             if (calculate > 0) {
                 System.out.println("Calculating factorial...");
                 System.out.println(recursiveFactorial(calculate));
@@ -134,26 +136,36 @@ public class Recursion {
         }
     }
 
-//    Factorial Input
-    public static void inputFactorial() {
 
-    }
-//    Factorial Calculate Method
+    //    Factorial Calculate Method
     public static double recursiveFactorial(double input) {
-//        Function: Use recursion to find factorial of input.
         if (input > 0) {
             System.out.println("Input: " + input + " Next Input: " + (input - 1));
+
             return input * recursiveFactorial(input - 1);
         } else {
             return 1;
         }
     }
-//    Greatest Common Divisor Input
+
+
 //    Greatest Common Divisor Method
-//    Reverse Input
+    public static int gcd(int largerNum, int smallerNum) {
+        int remainder = 0;
+
+        while (largerNum % smallerNum > 0) {
+            remainder = largerNum % smallerNum;
+            largerNum = smallerNum;
+            smallerNum = remainder;
+        }
+        return smallerNum;
+    }
+
+
 //    Reverse Method
     public static String reverseWord(String text){
         if (text.length() == 0) {
+
             return text;
         } else {
             return reverseWord(text.substring(1)) + text.charAt(0);
