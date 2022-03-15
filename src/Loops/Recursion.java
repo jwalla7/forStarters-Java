@@ -53,7 +53,7 @@ public class Recursion {
                                  INVALID
                                  Enter "FACT" to calculate factorials!
                                  Enter "GCD" to calculate greatest common divisors!
-                                 Enter "WORDS" to reverse a word!EXCEPTION
+                                 Enter "WORDS" to reverse a word!
                                  """
                                   );
                 }
@@ -134,7 +134,7 @@ public class Recursion {
                         System.out.println(
                                          """
                                          INVALID
-                                         Enter a positive integer greater than 0. HA
+                                         Enter a positive integer greater than 0.
                                          """
                                           );
                     }
@@ -142,14 +142,14 @@ public class Recursion {
                     System.out.println(
                             """
                             INVALID
-                            Enter a positive integer greater than 0. LOL
+                            Enter a positive integer greater than 0.
                             """
                     );
                 } catch (ArithmeticException arithEx){
                     System.out.println(
                                      """
                                      INVALID
-                                     Enter a larger positive integer. NAH
+                                     Enter a larger positive integer.
                                      """
                                       );
                 } finally {
@@ -171,18 +171,18 @@ public class Recursion {
                     } else {
                         System.out.println(
                                          "INVALID" + '\n' +
-                                         "Enter a positive integer larger than " + smallerNum + " OKAYS."
+                                         "Enter a positive integer larger than " + smallerNum + "."
                                           );
                     }
                 } catch (InputMismatchException eMismatch) {
                     System.out.println(
                                      "INVALID" + '\n' +
-                                     "Enter a positive integer larger than " + smallerNum + " LOL."
+                                     "Enter a positive integer larger than " + smallerNum + "."
                                       );
                 } catch (ArithmeticException arEx){
                     System.out.println(
                                     "INVALID" + '\n' +
-                                    "Enter a positive integer larger than " + smallerNum + " NAH."
+                                    "Enter a positive integer larger than " + smallerNum + "."
                                       );
                 } finally {
                     response = console.nextLine();
@@ -196,7 +196,7 @@ public class Recursion {
                     } else {
                         System.out.println(
                                         "INVALID" + '\n'
-                                        + "Enter a positive integer larger than " + smallerNum + " NOW."
+                                        + "Enter a positive integer larger than " + smallerNum + "."
                         );
                     }
                 } catch (InputMismatchException eMismatch){
@@ -232,7 +232,7 @@ public class Recursion {
                                  INVALID
                                  Enter "FACT" to calculate factorials!
                                  Enter "GCD" to calculate greatest common divisors!
-                                 Enter "WORDS" to reverse a word!REVERSE
+                                 Enter "WORDS" to reverse a word!
                                  """
                                   );
                 response = console.nextLine();
