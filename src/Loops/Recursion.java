@@ -217,13 +217,49 @@ public class Recursion {
 //      6 - Reverse Words
         } else if (response.equals(reverseWords)) {
             System.out.println(
-                                """
-                                Lets find some factorials!
-                                Enter an integer greater or equal to 0.
-                                """
+                             """
+                             Lets reverse some words!
+                             Enter some words.
+                             """
                               );
-            response = console.nextLine();
+            do {
+                try {
+                    response = console.nextLine();
+
+                    if (response.length() > 1) {
+                        break;
+                    } else {
+                        System.out.println(
+                                         """
+                                         INVALID
+                                         Enter more than one word.
+                                         """
+                                          );
+                    }
+                } catch (InputMismatchException eMismatch) {
+                    System.out.println(
+                                     """
+                                     INVALID
+                                     Enter more than one word.
+                                     """
+                                      );
+                } catch (Exception e) {
+                    System.out.println(
+                                     """
+                                     INVALID
+                                     Enter more than one word.
+                                     """
+                                      );
+                } finally {
+                    System.out.println(
+                                    "Calculating " + response + " backwards..."
+                                      );
+                }
+            } while (true);
+            System.out.println(reverseWord(response));
+
         } else {
+
             do {
                 System.out.println(
                                  """
