@@ -106,6 +106,49 @@ public class While {
                                   );
             }
         }
+
+        if (response.equals(phrase)) {
+            System.out.println(
+                             """
+                             Is your phrase a Palindrome?
+                             Enter an phrase.
+                             """
+                             );
+            do {
+                try {
+                    response = console.nextLine();
+
+                    if (response.length() > 0) {
+                        break;
+                    } else {
+                        System.out.println(
+                                         "uh oh, " + response + " failed the first checkpoint and is not a palindrome." + '\n'
+                                         + "Let's try another phrase."
+                                          );
+                    }
+                } catch (Exception e) {
+                    System.out.println(
+                                     """
+                                     INVALID
+                                     Enter a phrase.
+                                     """
+                                      );
+                } finally {
+                }
+            } while (true);
+            System.out.println(
+                             "Checking if " + response + " is a palindrome..."
+            );
+            if (palindromeStr(response) == true) {
+                System.out.println(
+                        "Yes, " + response + " is a palindrome!"
+                );
+            } else {
+                System.out.println(
+                                 "Sorry, " + response + " is not a palindrome."
+                );
+            }
+        }
     }
 
 //    Palindrome Integer Method
@@ -132,7 +175,24 @@ public class While {
     }
 
 //    Palindrome String Method
-    public static String palindromeStr(String phrase) {
-        return null;
+    public static boolean palindromeStr(String submission) {
+        submission = submission.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+//        Define pointers
+        int left = 0;
+        int right = submission.length() - 1;
+
+        while (left <= right) {
+//            While Conditions:
+//             1 - repeat as long as the left pointer does not pass the right pointer.
+            if (submission.charAt(left) != submission.charAt(right)) {
+/*              If characters at the index of the left pointer don't match characters at the index of the right pointer,
+                the user's input in not a palindrome.
+*/
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
     }
 }
