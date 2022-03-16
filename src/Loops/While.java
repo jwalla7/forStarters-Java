@@ -32,7 +32,7 @@ public class While {
                          Type in INT to check if an integer is a palindrome!
                          Type in STR to check if a phrase is a palindrome!
                          """
-                         );
+                          );
 //          2.1 - (Define) accepted user inputs
         String integer = "INT";
         String phrase = "STR";
@@ -70,8 +70,8 @@ public class While {
                     if (number > 0) {
                         break;
                     } else {
-                        System.out.println("" +
-                                         "uh oh, " + number + " failed the first checkpoint and is not a palindrome." + '\n'
+                        System.out.println(
+                                         "Sorry, " + number + " failed the first checkpoint and is not a palindrome." + '\n'
                                          + "Let's try another number."
                                           );
                     }
@@ -113,7 +113,7 @@ public class While {
                              Is your phrase a Palindrome?
                              Enter an phrase.
                              """
-                             );
+                              );
             do {
                 try {
                     response = console.nextLine();
@@ -122,7 +122,7 @@ public class While {
                         break;
                     } else {
                         System.out.println(
-                                         "uh oh, " + response + " failed the first checkpoint and is not a palindrome." + '\n'
+                                         "Sorry, " + response + " failed the first checkpoint and is not a palindrome." + '\n'
                                          + "Let's try another phrase."
                                           );
                     }
@@ -138,15 +138,15 @@ public class While {
             } while (true);
             System.out.println(
                              "Checking if " + response + " is a palindrome..."
-            );
-            if (palindromeStr(response) == true) {
+                              );
+            if (palindromeStr(response)) {
                 System.out.println(
-                        "Yes, " + response + " is a palindrome!"
-                );
+                                 "Yes, " + response + " is a palindrome!"
+                                  );
             } else {
                 System.out.println(
                                  "Sorry, " + response + " is not a palindrome."
-                );
+                                  );
             }
         }
     }
@@ -162,7 +162,6 @@ public class While {
             System.out.println(
                              "Integer " + input + " is not a palindrome."
                               );
-
             return false;
         }
         int num = 0;
