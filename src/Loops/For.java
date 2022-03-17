@@ -110,56 +110,56 @@ public class For {
                              Enter a number greater than 3
                              """
                               );
-        }
 
-        do {
-            capacity = console.nextInt();
-            try {
-                if (capacity > 3) {
-                    break;
-                } else {
-                    System.out.println( "Invalid, enter a integer larger than " + capacity + "." );
+            do {
+                capacity = console.nextInt();
+                try {
+                    if (capacity > 3) {
+                        break;
+                    } else {
+                        System.out.println( "Invalid, enter a integer larger than " + capacity + "." );
+                    }
+                } catch (InputMismatchException eMis) {
+                    System.out.println( "Invalid, enter a integer larger than 3." );
+                } catch (Exception e) {
+                    System.out.println( "Invalid, enter a integer larger than 3." );
+                } finally {
+                    response = console.nextLine();
                 }
-            } catch (InputMismatchException eMis) {
-                System.out.println( "Invalid, enter a integer larger than 3." );
-            } catch (Exception e) {
-                System.out.println( "Invalid, enter a integer larger than 3." );
-            } finally {
-                response = console.nextLine();
-            }
-        } while (true);
+            } while (true);
 
-        randomNumbersArray = generateRandomNumbers(capacity);
-        System.out.println(
-                         "Calculating " + capacity + " random integers..." + '\n'
-                         + "Creating integers..." + Arrays.toString(randomNumbersArray) + '\n'
-                         + """
+            randomNumbersArray = generateRandomNumbers(capacity);
+            System.out.println(
+                    "Calculating " + capacity + " random integers..." + '\n'
+                            + "Creating integers..." + Arrays.toString(randomNumbersArray) + '\n'
+                            + """
                            Now, lets enter in an integer you want the sum of two random integers to equal.
                            Enter in an integer greater than 0.
                          """
-                          );
-        do {
-            target = console.nextInt();
-            try {
-                if (target > 0) {
-                    break;
-                } else {
-                    System.out.println( "Invalid, enter a integer larger than " + target + "." );
+            );
+            do {
+                target = console.nextInt();
+                try {
+                    if (target > 0) {
+                        break;
+                    } else {
+                        System.out.println( "Invalid, enter a integer larger than " + target + "." );
+                    }
+                } catch (InputMismatchException eMis) {
+                    System.out.println( "Invalid, enter a integer larger than 0." );
+                } catch (Exception e) {
+                    System.out.println( "Invalid, enter a integer larger than 0." );
+                } finally {
+                    response = console.nextLine();
                 }
-            } catch (InputMismatchException eMis) {
-                System.out.println( "Invalid, enter a integer larger than 0." );
-            } catch (Exception e) {
-                System.out.println( "Invalid, enter a integer larger than 0." );
-            } finally {
-                response = console.nextLine();
-            }
-        } while (true);
+            } while (true);
 
-        System.out.println(
-                         "Searching through list of random integers... " + Arrays.toString(randomNumbersArray) + '\n'
-                                 + "Finding which indices has the first occurrence of when two random integers equals " + target + " ..."
-                          );
-        System.out.println(Arrays.toString(twoSumMethod(randomNumbersArray, target)));
+            System.out.println(
+                    "Searching through list of random integers... " + Arrays.toString(randomNumbersArray) + '\n'
+                            + "Finding which indices has the first occurrence of when two random integers equals " + target + " ..."
+            );
+            System.out.println(Arrays.toString(twoSumMethod(randomNumbersArray, target)));
+        }
     }
 
 //    FizzBuzz Method
