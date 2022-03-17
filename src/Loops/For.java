@@ -14,14 +14,19 @@ For: A for loop repeats until a specified condition evaluates false. The structu
 
 import java.util.*;
 
+
 public class For {
 
     public static void main(String[] args) {
-//      1 - Introduction: This exercise utilizes various algorithms that utilize for loops.
-//       1.1 - FizzBuzz: Returns a string array of numbers and implements three conditionals Fizz, Buzz and FizzBuzz.
-//        1.2 - Two Sum: Reads through an array of numbers and returns the index of two numbers where it's sum matches a target number.
-//      2 - Scanner: accepts input from user.
-//       2.1 - Message Prompt at the start of executing Recursion.main()
+/*
+
+    1 - Introduction: This exercise utilizes various algorithms that utilize for loops.
+     1.1 - FizzBuzz: Returns a string array of numbers and implements three conditionals Fizz, Buzz and FizzBuzz.
+      1.2 - Two Sum: Reads through an array of numbers and returns the index of two numbers where it's sum matches a target number.
+    2 - Scanner: accepts input from user.
+     2.1 - Message Prompt at the start of executing Recursion.main()
+
+*/
         System.out.println(
                          """
                          |----------------------| |----------------------|
@@ -31,9 +36,9 @@ public class For {
                          Type in SUM to run Two Sum!
                          """
                           );
+        Scanner console = new Scanner(System.in);
         String fizzBuzzResponse = "FIZZ";
         String twoSumResponse = "SUM";
-        Scanner console = new Scanner(System.in);
         String response;
         int target;
         int capacity;
@@ -152,12 +157,12 @@ public class For {
 
         System.out.println(
                          "Searching through list of random integers... " + Arrays.toString(randomNumbersArray) + '\n'
-                                 + "Finding first occurrence when the sum of two random integers equals " + target + " ..."
+                                 + "Finding which indices has the first occurrence of when two random integers equals " + target + " ..."
                           );
         System.out.println(Arrays.toString(twoSumMethod(randomNumbersArray, target)));
     }
 
-    //    FizzBuzz Method
+//    FizzBuzz Method
     public static List<String> fizzBuzzMethod (int capacity) {
         List<String> fizzBuzzData = new ArrayList<>();
 
@@ -177,8 +182,8 @@ public class For {
 
 //    Random Integers Array Generator Method
     public static int[] generateRandomNumbers (int capacity) {
-        int [] generatedArray = new int[capacity];
         Random randomNumberGenerator = new Random();
+        int [] generatedArray = new int[capacity];
 
         for (int integers = 0; integers < generatedArray.length; integers++) {
             generatedArray[integers] = randomNumberGenerator.nextInt(capacity);
@@ -186,7 +191,7 @@ public class For {
         return generatedArray;
     }
 
-    //      Two Sum Method
+//    Two Sum Method
     public static int[] twoSumMethod (int [] capacity, int target) {
         Map<Integer, Integer> consolidate = new HashMap<>();
         int [] occurrence = new int [2];
