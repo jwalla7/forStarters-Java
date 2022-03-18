@@ -2,7 +2,7 @@ package Loops;
 
 /*
 
-For: A for loop repeats until a specified condition evaluates false. The structure of a for loop consist of three expressions.
+For: A for loop repeats until a specified condition evaluates false. The structure of a for loop consists of three expressions.
         1 - an initialization expression,
          1.1 - a conditional expression,
           1.2 - an incremental expression
