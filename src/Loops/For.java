@@ -135,8 +135,8 @@ public class For {
                             + """
                            Now, lets enter in an integer you want the sum of two random integers to equal.
                            Enter in an integer greater than 0.
-                         """
-            );
+                             """
+                              );
             do {
                 target = console.nextInt();
                 try {
@@ -156,7 +156,7 @@ public class For {
 
             System.out.println(
                     "Searching through list of random integers... " + Arrays.toString(randomNumbersArray) + '\n'
-                            + "Finding which indices has the first occurrence of when two random integers equals " + target + " ..."
+                            + "Finding which indices have the first occurrence of when two random integers equals " + target + " ..."
             );
             System.out.println(Arrays.toString(twoSumMethod(randomNumbersArray, target)));
         }

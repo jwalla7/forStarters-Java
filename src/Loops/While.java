@@ -43,7 +43,6 @@ public class While {
         do {
             response = console.nextLine();
                 if (response.equals(integer) || response.equals(phrase)) {
-
                     break;
                 } else {
                     System.out.println(

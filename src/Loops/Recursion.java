@@ -36,8 +36,8 @@ public class Recursion {
         String reverseWords = "WORDS";
 //          2.3 - (Implementation) of Scanner to receive user input.
         Scanner console = new Scanner(System.in);
-        double calculate;
         String response;
+        double calculate;
         int largerNum;
         int smallerNum;
 //          2.4 - (What if?) user input matches or doesn't match accepted user inputs 2.2
@@ -70,7 +70,7 @@ public class Recursion {
                     Lets find some factorials!
                     Enter an number greater or equal to 0.
                     """
-            );
+                     );
             do {
 //          3.3 - (What if?) do user inputs meet the requirements of new prompt
                 try {
@@ -118,11 +118,11 @@ public class Recursion {
 //      4 - Greatest Common Divisor
         } else if (response.equals(greatestCommonDivisor)) {
             System.out.println(
-                                """
-                                Lets find the greatest common divisor!
-                                First you'll need two integers, one larger than the other.
-                                Let's start by entering the smaller positive integer.
-                                """
+                             """
+                             Lets find the greatest common divisor!
+                             First you'll need two integers, one larger than the other.
+                             Let's start by entering the smaller positive integer.
+                             """
                               );
             do {
                 try {
@@ -140,11 +140,11 @@ public class Recursion {
                     }
                 } catch (InputMismatchException eMismatch) {
                     System.out.println(
-                            """
-                            INVALID
-                            Enter a positive integer greater than 0.
-                            """
-                    );
+                                     """
+                                     INVALID
+                                     Enter a positive integer greater than 0.
+                                     """
+                                      );
                 } catch (ArithmeticException arithEx){
                     System.out.println(
                                      """
@@ -157,9 +157,7 @@ public class Recursion {
                 }
             } while (true);
 
-            System.out.println(
-                            "Great! Now enter a positive integer larger than " + smallerNum + "."
-                              );
+            System.out.println("Great! Now enter a positive integer larger than " + smallerNum + ".");
             do {
                 try {
                     largerNum = console.nextInt();
