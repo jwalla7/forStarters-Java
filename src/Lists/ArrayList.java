@@ -144,6 +144,9 @@ public class ArrayList <T> {
         intList.addToBack(9);
         System.out.println(Arrays.toString(intList.getBackingArray()));
         intList.addToBack(10);
+        System.out.println("Array List Capacity = 18 -> New Unused Index Values = Null");
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToBack(11);
         System.out.println(Arrays.toString(intList.getBackingArray()));
 
 

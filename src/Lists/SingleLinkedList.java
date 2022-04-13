@@ -2,66 +2,67 @@ package Lists;
 
 
 public class SingleLinkedList {
+//    Variable Members
     private Node head;
     private Node tail;
     private int size;
 
-    //    Inner Class
+//    Inner Class
     private class Node {
         private int value;
         private Node next;
-        // Constructor
+//      Inner Class Constructors
         public Node(int value) {
             this.value = value;
         }
-        // Constructor
         public Node(int value, Node next) {
             this.value = value;
             this.next = next;
         }
 
     }
-    //    Constructor
+//    Outer Class Constructor
     public SingleLinkedList() {
         this.size = 0;
     }
-//    METHODS
-
-
-    //    Insert Node At Head Method
+//    Methods
+//      Insert Node At Head Method
     public void insertHeadPosition(int val) {
-        //        Create Node
+//      Create Node
         Node node = new Node(val);
-        //        Create Head Node
+//      Create Head Node
         node.next = head;
         head = node;
-        //        Edge Case (if LinkedList is null)
+//      Edge Case
         if (tail == null) {
             tail = head;
         }
-        //        Increase Size of LinkedList
+//      Increase Size of LinkedList
         size += 1;
     }
-    //    Insert Node At Tail Method
+//      Insert Node At Tail Method
     public void insertTailPosition(int val) {
-        // If List is empty
         if (tail == null) {
             insertHeadPosition(val);
+
             return;
         }
         Node node = new Node(val);
         tail.next = node;
         tail = node;
+
         size++;
     }
-    //    Insert Target At Index Method
+//      Insert Target At Index Method
     public void insertTargetPosition(int val, int index) {
         if (index == 0) {
             insertHeadPosition(val);
+
             return;
         }
         if (index == size) {
             insertTailPosition(val);
+
             return;
         }
         Node current = head;
@@ -73,19 +74,19 @@ public class SingleLinkedList {
 
         size++;
     }
-
-
-    //    Delete Node At Head Method
+//      Delete Node At Head Method
     public int deleteHeadPosition() {
         int val = head.value;
         head = head.next;
+
         if (head == null) {
             tail = null;
         }
         size--;
+
         return val;
     }
-    //    Delete Node At Tail Method
+//      Delete Node At Tail Method
     public int deleteLastPosition() {
         if (size <= 1) {
             return deleteHeadPosition();
@@ -94,19 +95,22 @@ public class SingleLinkedList {
         int val = tail.value;
         tail = secondLast;
         tail.next = null;
+
         return val;
     }
-    //    Get Target By Index
+//      Get Target By Index
     public Node get(int index) {
         Node node = head;
+
         for (int i = 0; i < index; i++) {
             node = node.next;
         }
         return node;
     }
-    //    Get Target By Value
+//      Get Target By Value
     public Node find(int value) {
         Node node = head;
+
         while (node != null) {
             if (node.value == value) {
                 return node;
@@ -115,7 +119,7 @@ public class SingleLinkedList {
         }
         return null;
     }
-//    Delete at Index
+//      Delete at Index
     public int deleteTargetPositions(int index) {
         if (index == 0) {
             return deleteLastPosition();
@@ -129,22 +133,24 @@ public class SingleLinkedList {
 
         return val;
     }
-//    Display LinkedList Nodes
+//      Display LinkedList Nodes
     public void displayNodes() {
         Node current = head;
         while (current != null) {
             System.out.print(current.value + " -> ");
+
             current = current.next;
         }
         System.out.println("NULL");
     }
 
 
-//     Main
+//      Main
     public static void main(String[] args) {
-//        Create LinkedList
+//      Create LinkedList
         SingleLinkedList singleLink = new SingleLinkedList();
-//        Insert Nodes
+
+//      Insert Nodes
         singleLink.insertHeadPosition(21);
         singleLink.insertHeadPosition(13);
         singleLink.insertHeadPosition(8);
@@ -159,7 +165,5 @@ public class SingleLinkedList {
         System.out.println(singleLink.deleteHeadPosition() + " Now Deleted ");
         System.out.println(singleLink.deleteTargetPositions(4) + " Now Deleted ");
         singleLink.displayNodes();
-
-
     }
 }
