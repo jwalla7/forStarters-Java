@@ -1,0 +1,122 @@
+package Lists;
+
+import java.util.Arrays;
+import java.util.NoSuchElementException;
+
+public class ArrayList <T> {
+
+    // Class Members
+    public static final int INITIAL_CAPACITY = 9;
+    private T[] backingArray;
+    private int size;
+
+    // Constructor
+    public ArrayList () {
+        backingArray = (T[]) new Object[INITIAL_CAPACITY];
+    }
+
+//    METHODS
+    // Insert Target At Front
+    public void addToFront (String data) {
+        if (data == null) {
+            throw new IllegalArgumentException("Data is null");
+        }
+        int capacity = backingArray.length;
+
+        if (size == capacity) {
+            T[] newArr = (T[]) new Object[2 * capacity];
+            newArr[0] = (T) data;
+
+            for (int i = 0; i < size; i++) {
+                newArr[i + 1] = backingArray[i];
+            }
+            backingArray = newArr;
+        } else {
+            for (int i = size; i > 0; i--) {
+                backingArray[i] = backingArray[i - 1];
+            }
+            backingArray[0] = (T) data;
+        }
+        size++;
+        System.out.println("added to front " + backingArray[0] + " <- ");
+    }
+    //    Insert Target At Back
+    public void addToBack (String data) {
+        if (data == null) {
+            throw new IllegalArgumentException();
+        }
+        int capacity = backingArray.length;
+        if (size == capacity) {
+            T[] newArr = (T[]) new Object[2 * capacity];
+            for (int i = 0; i < size; i++) {
+                newArr[i] = backingArray[i];
+            }
+            newArr[size] = (T) data;
+            backingArray = newArr;
+        } else {
+            backingArray[size] = (T) data;
+        }
+        size++;
+        System.out.println("added to back " + (backingArray[size - 1])  + " -> ");
+    }
+    //    Delete Target From Front
+    public T removeFromFront () {
+        if (size == 0) {
+            throw new NoSuchElementException();
+        }
+        T removedElement = backingArray[0];
+        for (int i = 0; i < size - 1; i++) {
+            backingArray[i] = backingArray[i + 1];
+        }
+        backingArray[size - 1] = null;
+        size--;
+
+        return removedElement;
+    }
+    //    Delete Target From Back
+    public T removeFromBack () {
+        if (size == 0) {
+            throw new NoSuchElementException();
+        }
+        T removedElement = backingArray[size - 1];
+        backingArray[size - 1] = null;
+        size--;
+
+        return removedElement;
+    }
+
+    // Getter
+    public T[] getBackingArray () {
+        return backingArray;
+    }
+
+    public int size () {
+        return size;
+    }
+
+    public static void main(String[] args) {
+        ArrayList stringList = new ArrayList<String>();
+
+
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToBack("E");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToFront("D");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToFront("C");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToFront("B");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToFront("A");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToBack("F");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToBack("G");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToBack("H");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+        stringList.addToBack("I");
+        System.out.println(Arrays.toString(stringList.getBackingArray()));
+
+    }
+}

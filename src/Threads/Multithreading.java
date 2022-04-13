@@ -1,6 +1,4 @@
-package Loops;
-
-public class DoWhile {
+package Threads;public class Multithreading {
     public static void main(String[] args) {
 
     }

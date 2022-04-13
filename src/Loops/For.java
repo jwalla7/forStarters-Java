@@ -206,7 +206,7 @@ public class For {
             consolidate.put(capacity[integer], integer);
         }
         if (occurrence[0] == 0 && occurrence[1] == 0) {
-            System.out.println(" There are no instances of Two Sum in this array, try again.");
+            System.out.println(" There are no instances of Two Sumb in this array, try again.");
         }
         return occurrence;
     }
