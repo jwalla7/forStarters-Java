@@ -4,20 +4,19 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 public class ArrayList <T> {
-
-    // Class Members
+//    Class Variables
     public static final int INITIAL_CAPACITY = 9;
     private T[] backingArray;
     private int size;
 
-    // Constructor
+//    Constructor
     public ArrayList () {
         backingArray = (T[]) new Object[INITIAL_CAPACITY];
     }
 
 //    METHODS
-    // Insert Target At Front
-    public void addToFront (String data) {
+//      Insert Target At Front
+    public void addToFront (T data) {
         if (data == null) {
             throw new IllegalArgumentException("Data is null");
         }
@@ -40,8 +39,8 @@ public class ArrayList <T> {
         size++;
         System.out.println("added to front " + backingArray[0] + " <- ");
     }
-    //    Insert Target At Back
-    public void addToBack (String data) {
+//        Insert Target At Back
+    public void addToBack (T data) {
         if (data == null) {
             throw new IllegalArgumentException();
         }
@@ -59,7 +58,7 @@ public class ArrayList <T> {
         size++;
         System.out.println("added to back " + (backingArray[size - 1])  + " -> ");
     }
-    //    Delete Target From Front
+//        Delete Target From Front
     public T removeFromFront () {
         if (size == 0) {
             throw new NoSuchElementException();
@@ -73,7 +72,7 @@ public class ArrayList <T> {
 
         return removedElement;
     }
-    //    Delete Target From Back
+//        Delete Target From Back
     public T removeFromBack () {
         if (size == 0) {
             throw new NoSuchElementException();
@@ -85,7 +84,7 @@ public class ArrayList <T> {
         return removedElement;
     }
 
-    // Getter
+//     Getters
     public T[] getBackingArray () {
         return backingArray;
     }
@@ -93,11 +92,12 @@ public class ArrayList <T> {
     public int size () {
         return size;
     }
-
+//       Main Method
     public static void main(String[] args) {
+//        Create New List with Type -> String
         ArrayList stringList = new ArrayList<String>();
-
-
+//        Add String to Front
+        System.out.println("Array List Capacity = 9 -> Initial Values = Null");
         System.out.println(Arrays.toString(stringList.getBackingArray()));
         stringList.addToBack("E");
         System.out.println(Arrays.toString(stringList.getBackingArray()));
@@ -109,6 +109,7 @@ public class ArrayList <T> {
         System.out.println(Arrays.toString(stringList.getBackingArray()));
         stringList.addToFront("A");
         System.out.println(Arrays.toString(stringList.getBackingArray()));
+//        Add Integer to Back
         stringList.addToBack("F");
         System.out.println(Arrays.toString(stringList.getBackingArray()));
         stringList.addToBack("G");
@@ -117,6 +118,34 @@ public class ArrayList <T> {
         System.out.println(Arrays.toString(stringList.getBackingArray()));
         stringList.addToBack("I");
         System.out.println(Arrays.toString(stringList.getBackingArray()));
+
+//        Create New List with Type -> int
+        ArrayList intList = new ArrayList<Integer>();
+//        Add Integer to Front
+        System.out.println("Array List Capacity = 9 -> Initial Values = Null");
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToFront(5);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToFront(4);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToFront(3);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToFront(2);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToFront(1);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+//        Add Integer to Back
+        intList.addToBack(6);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToBack(7);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToBack(8);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToBack(9);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+        intList.addToBack(10);
+        System.out.println(Arrays.toString(intList.getBackingArray()));
+
 
     }
 }
