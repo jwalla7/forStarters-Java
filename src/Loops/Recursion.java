@@ -10,10 +10,14 @@ import java.util.Scanner;
 public class Recursion {
 
     public static void main(String[] args) {
-//      1 - Introduction: This exercise utilizes various algorithms that utilize recursion.
-//        1.1 - Recursion Factorial Calculator: Accepts input of a positive number and returns the number's factorial.
-//          1.2 - Greatest Common Divisor Calculator: Accepts input of a larger and smaller integer and returns the greatest common divisor.
-//            1.3 - Reverse Words Generator: Accepts input of a string and returns the string backwards.
+ /*
+*
+ *  Introduction: This exercise utilizes various algorithms that utilize recursion.
+ *  Recursion Factorial Calculator: Accepts input of a positive number and returns the number's factorial.
+ *  The Greatest Common Divisor Calculator: Accepts input of a larger and smaller integer and returns the greatest common divisor.
+ *  Reverse Words Generator: Accepts input of a string and returns the string backwards.
+*
+  */
 
 //  Which Calculator or Generator?
 

@@ -4,10 +4,15 @@ import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static java.lang.String.valueOf;
+ /*
+*
+ *  Serialization describes the process of taking an object's state
+ *   and transforming it into a stream of bytes
+ *  The stream of bytes created by serialization only includes the
+ *   member variables off an object.
+*
+  */
 
-//  1.0 Serialization describes the process of taking an object's state and transforming it into a stream of bytes
-    //  1.1 The stream of bytes created by serialization only includes the member variables off an object.
 public class Serialization implements Serializable {
     private String myName;
     private int myAge;
@@ -22,7 +27,11 @@ public class Serialization implements Serializable {
 
 //    Methods
     public String toString() {
-        return String.format("Hello, my name is %s. I am %d, and %s", this.myName, this.myAge, this.occupation);
+        return String.format("Hello, my name is %s. I am %d, and %s",
+                            this.myName,
+                            this.myAge,
+                            this.occupation
+                            );
     }
 
 
@@ -43,7 +52,9 @@ public class Serialization implements Serializable {
 
         //   toString Method
         public String toString() {
-            return String.format("I work as a/an %s for a living.", this.occupation);
+            return String.format("I work as a/an %s for a living.",
+                                this.occupation
+                                );
         }
     }
 

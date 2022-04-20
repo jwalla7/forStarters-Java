@@ -8,16 +8,19 @@ import java.util.Scanner;
 public class While {
 
     public static void main(String[] args) {
-//      1 - Introduction: This exercise utilizes algorithms that utilize the while method.
-//       1.1 - Palindrome Integer: Accepts input of a positive integer and validates if input is a Palindrome.
-//        1.2 - Palindrome String: Accepts input a string and validates if input is a Palindrome.
-/*         1.3 - What is a Palindrome? A word, phrase, or sequence that reads the same backwards as forwards.
-*                For example, 121 is a palindrome while 123 is not.
-*                   121 -> forwards equals 121
-*                   121 <- backwards equals 121
-*                   123 -> forwards equals 123
-*                   123 <- backwards equals 321 and does not equal 123.
-*/
+ /*
+*
+ *  1 - Introduction: This exercise utilizes algorithms that utilize the while method.
+ *   1.1 - Palindrome Integer: Accepts input of a positive integer and validates if input is a Palindrome.
+ *    1.2 - Palindrome String: Accepts input a string and validates if input is a Palindrome.         1.3 - What is a Palindrome? A word, phrase, or sequence that reads the same backwards as forwards.
+ *     For example, 121 is a palindrome while 123 is not.
+ *                  121 -> forwards equals 121
+ *                  121 <- backwards equals 121
+ *                  123 -> forwards equals 123
+ *
+ *                   123 <- backwards equals 321 and does not equal 123.
+*
+ */
 
 //        Which method, Palindrome Integer or Palindrome String?
 
@@ -153,11 +156,14 @@ public class While {
 //    Palindrome Integer Method
     public static boolean palindromeInt(int input) {
         if (input < 0 || input % 10 == 0 && input != 0) {
-//      1 - (What if) Invalid Cases:
-//       1.1 - Invalid Case 1 - If input is a negative number (input < 0 ).
-/*        1.2 - Invalid Case 2 - If input's 10's place is equal to 0 (input % 10 = 0) AND input is not 0.
-*         For example, 25 % 10 = 5 and 256 % 10 = 6.
-*/
+ /*
+*
+ *      1 - (What if) Invalid Cases:
+ *       1.1 - Invalid Case 1 - If input is a negative number (input < 0 ).
+ *        1.2 - Invalid Case 2 - If input's 10's place is equal to 0 (input % 10 = 0) AND input is not 0.
+ *         For example, 25 % 10 = 5 and 256 % 10 = 6.
+*
+ */
             System.out.println(
                              "Integer " + input + " is not a palindrome."
                               );
@@ -183,9 +189,9 @@ public class While {
 //            While Conditions:
 //             1 - repeat as long as the left pointer does not pass the right pointer.
             if (submission.charAt(left) != submission.charAt(right)) {
-/*              If characters at the index of the left pointer don't match characters at the index of the right pointer,
-                the user's input in not a palindrome.
-*/
+
+//              If characters at the index of the left pointer don't match characters at the index of the right pointer,
+//               the user's input in not a palindrome.
                 return false;
             }
             left++;

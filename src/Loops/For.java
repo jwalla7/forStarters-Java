@@ -1,15 +1,16 @@
 package Loops;
 
-/*
-
-For: A for loop repeats until a specified condition evaluates false. The structure of a for loop consists of three expressions.
-        1 - an initialization expression,
-         1.1 - a conditional expression,
-          1.2 - an incremental expression
-    For example, for ( [initialExpression]; [conditionExpression]; [incrementExpression]) {
-        Block Statement
-}
-
+ /*
+*
+ *  For: A for loop repeats until a specified condition evaluates false. The structure of a for loop consists of three expressions.
+ *      1 - an initialization expression,
+ *       1.1 - a conditional expression,
+ *        1.2 - an incremental expression
+ *  For example:
+ *   for ( [initialExpression]; [conditionExpression]; [incrementExpression]) {
+ *       Block Statement
+ *   }
+*
  */
 
 import java.util.*;
@@ -18,15 +19,16 @@ import java.util.*;
 public class For {
 
     public static void main(String[] args) {
-/*
-
-    1 - Introduction: This exercise utilizes various algorithms that utilize for loops.
-     1.1 - FizzBuzz: Returns a string array of numbers and implements three conditionals Fizz, Buzz and FizzBuzz.
-      1.2 - Two Sum: Reads through an array of numbers and returns the index of two numbers where it's sum matches a target number.
-    2 - Scanner: accepts input from user.
-     2.1 - Message Prompt at the start of executing Recursion.main()
-
-*/
+ /*
+*
+ *
+ *  Introduction: This exercise utilizes various algorithms that utilize for loops.
+ *      1.1 - FizzBuzz: Returns a string array of numbers and implements three conditionals Fizz, Buzz and FizzBuzz.
+ *       1.2 - Two Sum: Reads through an array of numbers and returns the index of two numbers where it's sum matches a target number.
+ *      2 - Scanner: accepts input from user.
+ *       2.1 - Message Prompt at the start of executing Recursion.main()
+*
+ */
         System.out.println(
                          """
                          |----------------------| |----------------------|
