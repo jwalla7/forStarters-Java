@@ -7,3 +7,43 @@ L
 src/Conditionals/Switch.java,1/3/1314fc63a5ce40570dfd5348f5f338d81506e4f3
 M
 src/Conditionals/Ternary.java,0/b/0b7be83d7ea0c72e1955ab06d91cc94dd732e0da
+F
+src/Loops/ForEach.java,9/3/9381a93537da3f89561c10848134e8772a80c44c
+E
+src/Sets/TreeSet.java,0/1/0168b110510463ec8dc7c8dd9f6c5ea103be13e2
+G
+src/Threads/Thread.java,f/f/ff9c1837e110c5e1fea86560998147af5148a90d
+O
+src/Threads/Multithreading.java,0/1/011c2d6dd59869a1937b1c9c9d0ffee7cae4ac06
+K
+src/IO/Deserialization.java,3/6/36006a0b1e7b493fc47d5d5a6e33ddae570189f2
+E
+src/Sets/HashSet.java,9/6/967462a38c816741da65061abe82f9b7129f170b
+K
+src/Sets/LinkedHashSet.java,3/c/3ca3bca6c3358ef393f81d72c4f57368219568bc
+E
+src/Maps/HashMap.java,a/4/a4fa528e4d5791aec8c5d908e4c1056c9da20106
+K
+src/Maps/LinkedHashMap.java,8/9/893ae3831003a91cda475dc9b7c0f42701442d4e
+R
+"src/ADT/Queue/LinkedListQueue.java,5/0/509b13bd68066df9a29fa8901d10d829b01188fe
+P
+ src/ADT/Queue/PriorityQueue.java,f/4/f4ea641cf25391bf236b12920e3da6f63a48a07f
+E
+src/Maps/TreeMap.java,0/5/052a5c0c06e428516dfe506ec0482c170797e347
+>
+src/ADT/ADT.md,4/4/4459ecbc01812251c328fa20c3d255a31a53aef8
+I
+src/IO/Serialization.java,6/9/69cc7caced942cf24aca98aecac5efef223213b6
+Q
+!src/Lists/CircularLinkedList.java,0/9/09ba2bd7c8d50cbe525bf345bd6cc6d5288812b6
+O
+src/Lists/SingleLinkedList.java,5/f/5f41b3ea4202fe62822a0bef3327a7359f17cfe6
+P
+ src/Lists/SingleLinkedListT.java,6/e/6edd7ad4c73900d9ed76d3c66ef9dd0440ded7cb
+O
+src/Lists/DoubleLinkedList.java,1/2/1260d0b93c24b40e9c018c976c24a107af080578
+B
+src/Loops/For.java,f/d/fd4cd22b185e360af68c9ffe0cb40be2e641e8a6
+H
+src/Loops/Recursion.java,c/6/c6da46c5c71dd5172decc97ea543a5ae0ff775c5
