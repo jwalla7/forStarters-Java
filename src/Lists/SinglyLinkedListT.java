@@ -1,7 +1,7 @@
 package Lists;
 
 
-public class SingleLinkedListT<T> {
+public class SinglyLinkedListT<T> {
 //    Inner Class
     private static class Node<T> {
         private T element;
@@ -115,8 +115,8 @@ public class SingleLinkedListT<T> {
     }
 //    Main Method
     public static void main(String[] args) {
-        SingleLinkedListT singleLinkedString = new SingleLinkedListT<String>();
-        SingleLinkedListT singleLinkedInt = new SingleLinkedListT<Integer>();
+        SinglyLinkedListT singleLinkedString = new SinglyLinkedListT<String>();
+        SinglyLinkedListT singleLinkedInt = new SinglyLinkedListT<Integer>();
 
         singleLinkedString.addFirst("A");
         singleLinkedString.addFirst("B");

@@ -1,7 +1,7 @@
 package Lists;
 
 
-public class SingleLinkedList {
+public class SinglyLinkedList {
 //    Variable Members
     private Node head;
     private Node tail;
@@ -22,7 +22,7 @@ public class SingleLinkedList {
 
     }
 //    Outer Class Constructor
-    public SingleLinkedList() {
+    public SinglyLinkedList() {
         this.size = 0;
     }
 //    Methods
@@ -148,7 +148,7 @@ public class SingleLinkedList {
 //      Main
     public static void main(String[] args) {
 //      Create LinkedList
-        SingleLinkedList singleLink = new SingleLinkedList();
+        SinglyLinkedList singleLink = new SinglyLinkedList();
 
 //      Insert Nodes
         singleLink.insertHeadPosition(21);

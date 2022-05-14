@@ -25,25 +25,19 @@ E
 src/Maps/HashMap.java,a/4/a4fa528e4d5791aec8c5d908e4c1056c9da20106
 K
 src/Maps/LinkedHashMap.java,8/9/893ae3831003a91cda475dc9b7c0f42701442d4e
-R
-"src/ADT/Queue/LinkedListQueue.java,5/0/509b13bd68066df9a29fa8901d10d829b01188fe
-P
- src/ADT/Queue/PriorityQueue.java,f/4/f4ea641cf25391bf236b12920e3da6f63a48a07f
 E
 src/Maps/TreeMap.java,0/5/052a5c0c06e428516dfe506ec0482c170797e347
->
-src/ADT/ADT.md,4/4/4459ecbc01812251c328fa20c3d255a31a53aef8
 I
 src/IO/Serialization.java,6/9/69cc7caced942cf24aca98aecac5efef223213b6
 Q
 !src/Lists/CircularLinkedList.java,0/9/09ba2bd7c8d50cbe525bf345bd6cc6d5288812b6
 O
-src/Lists/SingleLinkedList.java,5/f/5f41b3ea4202fe62822a0bef3327a7359f17cfe6
-P
- src/Lists/SingleLinkedListT.java,6/e/6edd7ad4c73900d9ed76d3c66ef9dd0440ded7cb
-O
 src/Lists/DoubleLinkedList.java,1/2/1260d0b93c24b40e9c018c976c24a107af080578
 B
 src/Loops/For.java,f/d/fd4cd22b185e360af68c9ffe0cb40be2e641e8a6
-H
-src/Loops/Recursion.java,c/6/c6da46c5c71dd5172decc97ea543a5ae0ff775c5
+D
+src/Loops/While.java,5/8/589497216c221288890849466990a857efda357d
+E
+src/Arrays/Array.java,d/5/d5ecb82fb8b59e0ccb805152c7c44ad52ef48921
+P
+ src/ADT/Queue/PriorityQueue.java,f/4/f4ea641cf25391bf236b12920e3da6f63a48a07f
