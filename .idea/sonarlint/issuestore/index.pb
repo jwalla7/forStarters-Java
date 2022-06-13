@@ -7,20 +7,10 @@ L
 src/Conditionals/Switch.java,1/3/1314fc63a5ce40570dfd5348f5f338d81506e4f3
 M
 src/Conditionals/Ternary.java,0/b/0b7be83d7ea0c72e1955ab06d91cc94dd732e0da
-F
-src/Loops/ForEach.java,9/3/9381a93537da3f89561c10848134e8772a80c44c
-E
-src/Sets/TreeSet.java,0/1/0168b110510463ec8dc7c8dd9f6c5ea103be13e2
-G
-src/Threads/Thread.java,f/f/ff9c1837e110c5e1fea86560998147af5148a90d
 O
 src/Threads/Multithreading.java,0/1/011c2d6dd59869a1937b1c9c9d0ffee7cae4ac06
 K
 src/IO/Deserialization.java,3/6/36006a0b1e7b493fc47d5d5a6e33ddae570189f2
-E
-src/Sets/HashSet.java,9/6/967462a38c816741da65061abe82f9b7129f170b
-K
-src/Sets/LinkedHashSet.java,3/c/3ca3bca6c3358ef393f81d72c4f57368219568bc
 E
 src/Maps/HashMap.java,a/4/a4fa528e4d5791aec8c5d908e4c1056c9da20106
 K
@@ -33,11 +23,25 @@ Q
 !src/Lists/CircularLinkedList.java,0/9/09ba2bd7c8d50cbe525bf345bd6cc6d5288812b6
 O
 src/Lists/DoubleLinkedList.java,1/2/1260d0b93c24b40e9c018c976c24a107af080578
-B
-src/Loops/For.java,f/d/fd4cd22b185e360af68c9ffe0cb40be2e641e8a6
-D
-src/Loops/While.java,5/8/589497216c221288890849466990a857efda357d
-E
-src/Arrays/Array.java,d/5/d5ecb82fb8b59e0ccb805152c7c44ad52ef48921
 P
  src/ADT/Queue/PriorityQueue.java,f/4/f4ea641cf25391bf236b12920e3da6f63a48a07f
+E
+src/Sets/HashSet.java,9/6/967462a38c816741da65061abe82f9b7129f170b
+P
+ src/Lists/SinglyLinkedListT.java,2/9/29a340711b49c0f25daef3c61d2b76613e34cb73
+O
+src/Lists/SinglyLinkedList.java,f/b/fb40ee9f9d07b03c3e8c8b0153d9ad4e7b622770
+Q
+!src/Lists/SinglyLinkedListRE.java,2/6/26b69c02d8a47a429803d97365649b5137c6db3d
+Q
+!src/ADT/Queue/ArrayListDeque.java,c/9/c96bdd66259203600f92a3cea478775268a3fac7
+H
+src/Lists/ArrayList.java,1/7/17d05e548fcb7169ce53ab7526e5ba86cf470dcb
+E
+src/Arrays/Array.java,d/5/d5ecb82fb8b59e0ccb805152c7c44ad52ef48921
+G
+src/Threads/Thread.java,f/f/ff9c1837e110c5e1fea86560998147af5148a90d
+F
+src/Loops/ForEach.java,9/3/9381a93537da3f89561c10848134e8772a80c44c
+B
+src/Loops/For.java,f/d/fd4cd22b185e360af68c9ffe0cb40be2e641e8a6

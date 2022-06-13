@@ -297,7 +297,7 @@ public class Recursion {
         }
         return smallerNum;
     }
-//    Reverse Method
+//    Reverse Word Method
     public static String reverseWord(String text){
         if (text.length() == 0) {
 
