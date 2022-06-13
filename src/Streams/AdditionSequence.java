@@ -10,7 +10,13 @@ public class AdditionSequence {
         System.out.println(sumSequence(5,9,6));
     }
 
-// i++ until j; j-- until k; i = 5, j = 9, k = 6; (5 + 6 + 7 + 8 + 9 + 8 + 7 + 6) = 56
+ /*
+*
+ * Sum of sequence
+ * i++ until j; j-- until k; Return sum of sequence
+ * for example: i = 5, j = 9, k = 6; (5 + 6 + 7 + 8 + 9 + 8 + 7 + 6) = 56
+*
+ */
     public static long sumSequence(int i, int j, int k) {
         List<Integer> count = new ArrayList<>();
         if (i > j || j < k) return 0;

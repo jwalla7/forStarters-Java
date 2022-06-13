@@ -16,9 +16,9 @@ public class StreamBasics {
         );
 
 
-//        members first name starts with C
+//       Filter members with first names that start with C
         members.stream()
-                .filter(m -> m.getFirstName().startsWith("C")) // filter members with first names that start with C
+                .filter(m -> m.getFirstName().startsWith("C"))
                 .forEach(m -> System.out.println(m.getFirstName() + " " + m.getLastName() + " is " + m.getAge() + "years old"));
 
     }

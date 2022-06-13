@@ -1,5 +1,5 @@
 # ADTs
-Abstract Data Types are also known as ADTs. Two types of ADTs include Stacks, Queues, and Deques.
+Abstract Data Types are also known as ADTs. Widely used types of ADTs include Stacks, Queues and Deques.
 <br>
 <br>
 Stacks, Queues, and Deques are limited by their ADT operations.
@@ -11,7 +11,7 @@ FIFO Model - (First In, First Out)
 ## Priority Queues
 
 ## Deques
-
+Deques or Double Ended Queues is a type of Queue where insertion and removal of elements can either be performed from the front or rear.
 ## Stacks
 LIFO Model - (Last In, First Out)
 <p>
