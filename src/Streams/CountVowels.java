@@ -2,7 +2,7 @@ package Streams;
 
 import java.util.function.IntPredicate;
 
-public class CountVowles {
+public class CountVowels {
     public static void main(String[] args){
         System.out.println(testString("apple")); // 2
         System.out.println(testString("cheesecake")); // 5
