@@ -2,7 +2,7 @@ package Streams;
 
 import java.util.Arrays;
 
-public class findLargestSmallestNumber {
+public class FindSmallestLargestNumber {
     public static void main(String[] args){
         System.out.println(maxNumber(new int[] {4, 5, 1, 3})); // 5
         System.out.println(minNumber(new int[] {4, 5, 1, 3})); // 1
