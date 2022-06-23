@@ -1,6 +1,5 @@
 package Streams;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -10,10 +9,8 @@ public class FizzBuzz {
         System.out.println(fizzBuzzDataList(99));
     }
 
-    static List<String> fizzBuzzDataList (int n) {
-        List<String> fizzBuzzData = new ArrayList<>();
-
-        return IntStream.rangeClosed(1, n)
+    static List<String> fizzBuzzDataList (int cap) {
+        return IntStream.rangeClosed(1, cap)
                  .mapToObj(i -> {
                      if (i % 15 == 0) return "FizzBuzz";
                      if (i % 5 == 0) return "Buzz";
