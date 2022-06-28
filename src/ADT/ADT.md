@@ -5,7 +5,6 @@ Abstract Data Types are also known as ADTs. Widely used types of ADTs include St
 Stacks, Queues, and Deques are limited by their ADT operations.
 <br>
 <br>
-Stacks, Queues, and Deques are not ideal for accessing or searching because they are designed to only reach the data that is immediately accessible by the remove operation.
 ## Queues
 FIFO Model - (First In, First Out)
 ## Priority Queues
