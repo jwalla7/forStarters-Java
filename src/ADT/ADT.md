@@ -9,6 +9,7 @@ Stacks, Queues, and Deques are limited by their ADT operations.
 FIFO Model - (First In, First Out)
 ## Priority Queues
 
+
 ## Deques
 Deques or Double Ended Queues is a type of Queue where insertion and removal of elements can either be performed from the front or rear.
 ## Stacks
