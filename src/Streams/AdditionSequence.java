@@ -19,6 +19,7 @@ public class AdditionSequence {
  */
     public static long sumSequence(int i, int j, int k) {
         List<Integer> count = new ArrayList<>();
+
         if (i > j || j < k) return 0;
         IntStream.rangeClosed(i, j).forEach(a -> count.add(a));
         IntStream.range(k, j).filter(b -> b < j).forEach(b -> count.add(b));

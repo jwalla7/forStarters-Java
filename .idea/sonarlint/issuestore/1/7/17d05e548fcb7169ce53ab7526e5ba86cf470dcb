@@ -1,0 +1,20 @@
+
+E
+java:S3740˜"/Provide the parametrized type for this generic.(³ü‡\
+F
+java:S3740¼"/Provide the parametrized type for this generic.(›èÕì
+D
+java:S19052")Remove this unnecessary cast to "Object".(ûŒã¿şÿÿÿÿ
+o
+java:S3012V"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÀûŒ
+D
+java:S1905]")Remove this unnecessary cast to "Object".(ÖÆÃÿÿÿÿÿ
+D
+java:S1905_")Remove this unnecessary cast to "Object".(ÖÆÃÿÿÿÿÿ
+o
+java:S3012o"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÀûŒ
+D
+java:S1905q")Remove this unnecessary cast to "Object".(Áâî»şÿÿÿÿ
+>
+java:S1905t")Remove this unnecessary cast to "Object".(¥§N
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áùòŒ

@@ -1,0 +1,12 @@
+
+M
+java:S1117A"7Rename "tail" which hides the field declared at line 6.(µÈô
+@
+java:S1172U"*Remove this unused method parameter "val".(Æ“™¯
+E
+java:S1656
+"/Remove or correct this useless self-assignment.(°şˆ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áùòŒ
+x
+java:S4165
+"bRemove this useless assignment; "size" already holds the assigned value along all execution paths.(°şˆ

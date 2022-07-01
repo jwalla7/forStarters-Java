@@ -1,0 +1,14 @@
+
+Q
+java:S1612";Replace this lambda with method reference 'String::length'.(¢êò¦
+E
+java:S1611"/Remove the parentheses around the "s" parameter(«ÆáÀ
+Q
+java:S1612";Replace this lambda with method reference 'String::length'.(«ÆáÀ
+V
+java:S1612";Replace this lambda with method reference 'String::length'.(î‰Çˆûÿÿÿÿ
+X
+java:S1612";Replace this lambda with method reference 'String::length'.(ÆïÍğ8ï‚¯ç0
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢êò¦
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÆáÀ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¶ê…üÿÿÿÿ

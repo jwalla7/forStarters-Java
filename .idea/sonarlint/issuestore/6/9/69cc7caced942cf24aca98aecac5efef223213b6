@@ -1,0 +1,8 @@
+
+g
+java:S3776="RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ฌรเ"
+
+java:S1130="xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(ฌรเ"
+4
+java:S1700("Rename field "occupation"(ภนี๙ÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ิÛฦ

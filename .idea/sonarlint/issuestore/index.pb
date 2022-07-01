@@ -41,18 +41,8 @@ E
 src/Arrays/Array.java,d/5/d5ecb82fb8b59e0ccb805152c7c44ad52ef48921
 G
 src/Threads/Thread.java,f/f/ff9c1837e110c5e1fea86560998147af5148a90d
-F
-src/Loops/ForEach.java,9/3/9381a93537da3f89561c10848134e8772a80c44c
-B
-src/Loops/For.java,f/d/fd4cd22b185e360af68c9ffe0cb40be2e641e8a6
 D
 src/Loops/While.java,5/8/589497216c221288890849466990a857efda357d
-Y
-)src/Lambdas/ExceptionHandlingLambdas.java,2/c/2cd1be459389ed208c27445e9f8ec47139d68840
-U
-%src/Lambdas/CollectionIterations.java,c/9/c9954127a60023c3ba5711e500ad46c1777ce71a
-L
-src/Streams/CountVowles.java,d/e/de856486fc0917acc30a055d2e74a805af8e3e24
 K
 src/Sets/LinkedHashSet.java,3/c/3ca3bca6c3358ef393f81d72c4f57368219568bc
 H
@@ -71,8 +61,6 @@ L
 src/Operators/Increment.java,b/5/b5bf3687a2fccdaa107ec5c987a13d2c61aa8611
 R
 "src/Operators/InfixExpression.java,2/f/2f46ae4ee0b653b5ea309a8fb874afce58b1ed65
-Q
-!src/Lambdas/MethodReferences.java,7/9/79799571d513e1ba1d5408c64786f57bf2f47d98
 J
 src/Operators/Modulus.java,5/1/51a84e451c00a3a8aedc3cb0d767486cfa7b2e4e
 K
@@ -81,8 +69,6 @@ Q
 !src/Operators/Multiplication.java,9/9/993dafeb196b1d15f8bdbe87ddd8e17082eda813
 G
 src/Lambdas/Person.java,3/6/3675208c96f35e00f4bfc3e5011b9be1409ea5d9
-N
-src/Lambdas/PersonLambdas.java,2/6/26f24d84a9f5a6d2e55d41d057894f3de0e82eb2
 T
 $src/Operators/PostfixExpression.java,1/1/11afb5956ce2e767a90983fd67b6976bad75bd41
 S
@@ -93,5 +79,7 @@ N
 src/Operators/Subtraction.java,2/d/2d629e7150fa175ee365dc3a53ee3b6aea813679
 N
 src/Lambdas/TypeInference.java,6/f/6f7785e982a40c9da353b97900ed4a12cf985d52
-Z
-*src/Streams/FindSmallestLargestNumber.java,e/3/e37498c191c19bfa71e348750cd08b9807f573a5
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+>
+src/ADT/ADT.md,4/4/4459ecbc01812251c328fa20c3d255a31a53aef8
