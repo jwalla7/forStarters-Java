@@ -6,7 +6,7 @@ import java.util.*;
 *   Roman Numeral Conversion
  *   1.0 Store Roman Numeral key:value pairs
  *   1.1 Iterate through Roman Numeral key:value pairs
-*    1.2 Accept a String of Roman Numerals
+ *   1.2 Accept a String of Roman Numerals
 *    1.3 Convert String to a number
 */
 
