@@ -81,8 +81,6 @@ N
 src/Lambdas/TypeInference.java,6/f/6f7785e982a40c9da353b97900ed4a12cf985d52
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
->
-src/ADT/ADT.md,4/4/4459ecbc01812251c328fa20c3d255a31a53aef8
 I
 src/Streams/FizzBuzz.java,c/f/cfc58f5b855fda57749d76d942c431951ece3ba8
 Q
@@ -97,3 +95,5 @@ F
 src/Loops/ForEach.java,9/3/9381a93537da3f89561c10848134e8772a80c44c
 B
 src/Loops/For.java,f/d/fd4cd22b185e360af68c9ffe0cb40be2e641e8a6
+>
+src/ADT/ADT.md,4/4/4459ecbc01812251c328fa20c3d255a31a53aef8
